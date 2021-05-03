@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="CSS/loginPage.css">
+    <link rel="shortcut icon" href="https://static.thenounproject.com/png/1292680-200.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logInPageContainer">
+        <h2 class="pageTitle">Log in</h2>
+        <p class="pageInfo">New to this site? <a href="#" class="pageSwitch">Sign Up</a></p>
+        <div class="inputContainer">
+            <form>
+                <span>Account</span> <br>
+                <input type="text" class="inputStyle account" name="mail"><br>
+                <span>Password</span> <br>
+                <input type="password" class="inputStyle password" name="password">
+                <p class="warning">Check your account or password again</p>
+                <div><input type="button" value="Log In" class="submitBTN"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="signUpPageContainer">
+        <h2 class="pageTitle">Sign up</h2>
+        <p class="pageInfo">Already a member?<a href="#" class="pageSwitch">Log In</a></p>
+        <div class="inputContainer">
+            <form>
+                <span>Account</span> <br>
+                <input type="text" class="inputStyle signUpAccount" name="mail"><br>
+                <span>Password</span> <br>
+                <input type="password" class="inputStyle signUpPassword" name="password">
+                <div><input type="button" value="Sign Up" class="signUpBTN"></div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="JS/loginPage.js"></script>
+</body>
+
+</html>

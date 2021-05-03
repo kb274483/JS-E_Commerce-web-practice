@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopPage</title>
+    <link rel="stylesheet" href="CSS/shoppage.css">
+    <link rel="shortcut icon" href="https://static.thenounproject.com/png/1292680-200.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <img src="https://static.thenounproject.com/png/3009115-200.png" 
+                class="logo" alt="Shutterico">
+            <h1 class="StoreName">
+                <span class="black">Maxx</span>
+                <span class="yellow">Cam</span>
+                <p>A Picture Perfect Camera Store</p>
+            </h1>
+            <a href="loginPage.html" class="loginPage"><img src="CSS/pic/728843-200.png" alt="Loginico">Login</a>
+            <a href="#" class="openCart"><img src="CSS/pic/3749271-200.png" alt="Cartico">Cart</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href="shoppage.html">Shop</a></li>
+                <li><a href="FAQPage.html">FAQ</a></li>
+                <li><a href="contactUsPage.html">Contact us</a></li>
+            </ul>
+            <span class="mail">kb274483@gmail.com</span>
+        </div>
+    </nav>
+
+    <div class="cartFunction">
+        <div class="cartTitle">
+            <div class="back">〉</div>
+            <div class="cartName">Cart</div>
+        </div>
+
+        <ul class="cartList">
+        
+        </ul>
+
+        <div class="calculation">
+            <div class="subTotal">Subtotal</div>
+            <div class="subPrice">Price :</div>
+        </div>
+
+        <div class="settle">
+            <div class="settleBtn">View Cart</div>
+        </div>
+
+    </div>
+
+    <div class="dialogBox">
+        <div class="dialogIcon"><input type="button" class="dialogBtn" value="..."></div>
+        
+        <div class="dialogTextarea">
+            <div class="description">
+                <div class="close"><div>X</div></div>
+                <div class="logoIcon"><img src="https://static.thenounproject.com/png/3009115-200.png" alt="logoimg"></div>
+                <div class="paragraph">
+                    <h4>Let's Chat!</h4>
+                    <p>Ask us any question.</p>
+                    <p>We’ll reply as soon as we can.</p>
+                </div>
+            </div>
+
+            <div class="desforenter">
+                <div class="deslogoIcon"><img src="https://static.thenounproject.com/png/3009115-200.png" alt="logoimg"></div>
+                <div class="desparagraph">
+                    <h4>Let's Chat!</h4>
+                    <p>Ask us any question.</p>
+                </div>
+                <div class="desclose"><div>X</div></div>
+            </div>
+
+
+
+            <div class="showDialog">
+                <div class="message"></div>
+            </div>
+            <div class="textArea">
+                <input type="text" name="text" class="textmsg" placeholder="Ask us any question.">
+                <button class="sendBtn"><img src="https://static.thenounproject.com/png/2581338-200.png" alt="sendbtn"></button>
+            </div>
+        </div>
+    </div>
+    
+    <section class="container">
+        <div class="titleContainer"><h3 class="title">Cameras & Accessories</h3></div>
+        
+        <div class="shopmainArea">
+            <div class="sideBar">
+                <div>Fliter by</div>
+                <div class="line"></div>
+                <ul class="filter">
+                    <ul class="collection">Collection <span class="open" data-num="1">+</span>
+                        <div><li data-num="1">All</li>
+                        <li data-num="2">Cameras</li>
+                        <li data-num="3">Accessories</li></div>
+                    </ul>
+                    <div class="line"></div>
+                    
+                    <ul class="price">Price  <span class="open" data-num="2">+</span>
+                        <div><li data-num="1">15000 ~ </li>
+                        <li data-num="2">10000 ~ 15000</li>
+                        <li data-num="3">0 ~ 10000</li></div>
+                    </ul>
+                    <div class="line"></div>
+                    
+                    <!---------
+                    <ul class="brand">Brand  <span class="open" data-num="3">+</span>
+                        <div><li>All</li>
+                        <li>Cameras</li>
+                        <li>Accessories</li></div>
+                    </ul>
+                    <div class="line"></div>------------>
+                </ul>
+            </div>
+            
+            <div class="commodityList">
+                <ul>
+                    <li><div class="camera swiper-slide" data-col = "camera" data-price= 16000>
+                        <a href="#">
+                            <img class="compic" src="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bfe9.png" alt="comimg" data-itemcon="1">
+                            <h4>Commodity Name One</h4>
+                            <h4>NTD:16000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="1">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col = "camera" data-price="17000"> 
+                        <a href="#">
+                            <img class="compic" src="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bfea.png" alt="comimg" data-itemcon="2">
+                            <h4>Commodity Name Two</h4>
+                            <h4>NTD:17000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="2">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col = "camera" data-price="13000"> 
+                        <a href="#">
+                            <img class="compic" src="http://assets.stickpng.com/thumbs/5e90a44cc7c8f9000434dd91.png" alt="comimg" data-itemcon="3">
+                            <h4>Commodity Name Three</h4>
+                            <h4>NTD:13000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="3">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col = "camera" data-price="15000">
+                        <a href="#">
+                            <img class="compic" src="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bfee.png" alt="comimg" data-itemcon="4">
+                            <h4>Commodity Name Four</h4>
+                            <h4>NTD:15000</h4>
+                        </a>
+                        <div class="cartbtn">
+                            <a href="#" data-add="add" data-itemcon="4">Add Cart</a>
+                        </div>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col = "camera" data-price="17000"> 
+                        <a href="#">
+                            <img class="compic" src="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bfe7.png" alt="comimg" data-itemcon="5">
+                            <h4>Commodity Name Five</h4>
+                            <h4>NTD:17000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="5">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col = "camera" data-price="14000">
+                        <a href="#">
+                            <img class="compic" src="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c009.png" alt="comimg" data-itemcon="6">
+                            <h4>Commodity Name Six</h4>
+                            <h4>NTD:14000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="6">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col = "camera" data-price="18000">
+                        <a href="#">
+                            <img class="compic" src="http://assets.stickpng.com/thumbs/5e9492ce718e370004ea4da7.png" alt="comimg" data-itemcon="7">
+                            <h4>Commodity Name Seven</h4>
+                            <h4>NTD:18000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="7">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col = "camera" data-price="10000">
+                        <a href="#">
+                            <img class="compic" src="http://assets.stickpng.com/thumbs/58767480a6b4d03bb3b81d2d.png" alt="comimg" data-itemcon="8">
+                            <h4>Commodity Name Eight</h4>
+                            <h4>NTD:10000</h4>
+                        </a>
+                        <div class="cartbtn">
+                            <a href="#" data-add="add" data-itemcon="8">Add Cart</a>
+                        </div>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col="acc" data-price="3000"> 
+                        <a href="#">
+                            <img class="compic" src="https://static.wixstatic.com/media/1f3c0f_59b151f5511d4086af0504a08667319d.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/1f3c0f_59b151f5511d4086af0504a08667319d.webp" alt="comimg" data-itemcon="9">
+                            <h4>Commodity Name Nine</h4>
+                            <h4>NTD:3000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="9">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col="acc" data-price="9000">
+                        <a href="#">
+                            <img class="compic" src="https://static.wixstatic.com/media/1f3c0f_8db8e156582542988be543ec4842909b.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/1f3c0f_8db8e156582542988be543ec4842909b.webp" alt="comimg"data-itemcon="10">
+                            <h4>Commodity Name Ten</h4>
+                            <h4>NTD:9000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="10">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col="acc" data-price="5000">
+                        <a href="#">
+                            <img class="compic" src="https://static.wixstatic.com/media/1f3c0f_73c0243cfbd1446db11b4430986baee4.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/1f3c0f_73c0243cfbd1446db11b4430986baee4.webp" alt="comimg" data-itemcon="11">
+                            <h4>Commodity Name Eleven</h4>
+                            <h4>NTD:5000</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="11">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                    <li><div class="camera swiper-slide" data-col="acc" data-price="8500">
+                        <a href="#">
+                            <img class="compic" src="https://static.wixstatic.com/media/1f3c0f_2fb45a4cead94cbb9e26e2447847a65c.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/1f3c0f_2fb45a4cead94cbb9e26e2447847a65c.webp" alt="comimg" data-itemcon="12">
+                            <h4>Commodity Name Twelve</h4>
+                            <h4>NTD:8500</h4>
+                            <div class="cartbtn">
+                                <a href="#" data-add="add" data-itemcon="12">Add Cart</a>
+                            </div>
+                        </a>
+                        </div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            <div class="info">
+                <div class="contactinfo">
+                    <h3>Contact us</h3>
+                    <p>
+                        500 Terry Francois Street San Francisco <br>
+                        CA 94158 Tel: 123-456-7890 <br>
+                        info@mysite.com 
+                    </p>
+                </div>
+                <div class="customerSer">
+                    <h3>Customer Service</h3>
+                    <a href="#">Contact Us ></a>/<a href="#">Shipping ></a><br>
+                    <a href="#">Returns ></a>/<a href="#">Payment & Warranty ></a>
+                </div>
+                <div class="statement"><h5>版權聲明 : <br>網站內容純屬練習<br>並無任何形式的商業行為<br>圖檔均來自公開免費的網站</h5></div>
+            </div>
+            <div class="socialmedia">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">IG</a>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/shoppage.js"></script>
+</body>
+</html>
