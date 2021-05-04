@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Raleway', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration: none;}
+/*-----------------------------------------------------------*/
+.header{
+    padding-top: 50px;
+    display: flex; width: 980px;
+    margin-right: auto; margin-left: auto;
+    }
+    .header h1{
+    font-size: 40px;
+    margin-right: auto;
+    }
+    .yellow{
+    color: #f59f1e;
+    }
+    .StoreName p{
+    font-size: 20px;
+    }
+    .logo{
+    width: 60px; height: 60px;
+    padding-right: 10px;
+    }
+    .header a{
+    line-height: 80px;
+    padding-right: 10px;
+    }
+
+    .header a img{ 
+    width: 35px; height: 35px;
+    }
+    .menu{
+    background-color: rgb(41, 41, 41);
+    width: 980px; display: flex;
+    margin-left: auto; margin-right: auto;
+    }
+    .menu ul{
+    line-height: 30px;
+    display: flex;    
+    }
+    .menu ul li{
+    margin: 10px; 
+    }
+    .menu ul li a{
+    height: 25px; width: 50px; color: #FFFFFF;
+    }
+    .mail{
+    color: #FFFFFF; margin-left: auto;
+    line-height: 30px;
+    padding: 10px 10px;
+    }
+/*---------------------------------------------------------*/
+    .dialogIcon{
+        width: 50px; height: 50px;
+        border-radius: 50%;
+        display: flex; justify-content: center;
+        align-items: center; 
+        background-color: black;
+        position: fixed; top:850px; right: 30px;
+    }
+    .dialogBtn{
+        border-radius: 50%; font-size: 20px;
+    }
+    .dialogIcon{
+        position:fixed; top:850px; right: 30px;
+    }
+    .dialogIcon:hover,.dialogBtn:hover{
+        cursor: pointer;
+    }
+    .dialogTextarea{
+        width: 300px; z-index: 10;
+        height: 450px; display: none;
+        border: solid 1px #f59f1e;
+        box-sizing: border-box;
+        background-color:rgb(228, 228, 228);
+        position: fixed; top: 500px; right: 30px;
+    }
+    .description{
+        background-color: rgb(41, 41, 41); 
+    }
+    .close{
+        direction: rtl; color: rgba(255, 255, 255);  
+    }
+    .close div{
+        height: 25px; width: 25px;
+        padding-top: 10px; padding-right: 10px; 
+        transition: all 0.5s;   
+    }
+    .close div:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+    }
+    .logoIcon{
+        display: flex; justify-content: center;
+    }
+    .logoIcon img{
+        width: 100px; height: 100px; border-radius: 45%;
+        background-color: rgba(255, 255, 255);  
+    }
+    .paragraph{
+        color: #FFFFFF; text-align: center;
+        margin-top: 10px;
+    }
+    .paragraph h4{
+        font-size: 25px ; color: #f59f1e;
+        margin-bottom: 20px;
+    }
+    .paragraph p{
+        padding-bottom: 15px;
+    }
+
+    .desforenter{
+        background-color: rgb(41, 41, 41);
+        justify-content: space-between;
+        display: none;
+    }
+    .deslogoIcon img{
+        width: 50px; height: 50px; border-radius: 45%;
+        background-color: rgba(255, 255, 255);  
+    }
+    .desparagraph{
+        color: #FFFFFF; text-align:left;
+        margin-top: 10px;
+    }
+    .desparagraph h4{
+        color: #f59f1e;
+    }
+    .desparagraph p{
+        padding-bottom: 10px;
+    }
+    .desclose{
+        direction: rtl; color: rgba(255, 255, 255);  
+    }
+    .desclose div{
+        height: 25px; width: 25px;
+        padding-top: 10px; padding-right: 10px; 
+        transition: all 0.5s; 
+    }
+    .desclose div:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+    }
+    .message{
+        height: 150px;overflow-y: scroll;    
+    }
+    .message div{
+        margin-top: 10px; line-height: 20px;
+        display: flex; justify-content: flex-end;
+    }
+    .message span{
+        color: #FFFFFF;
+        margin-left: auto; text-align: right;
+        background-color:#f59f1e; 
+        border-radius: 5px; padding: 5px;
+    }
+    .textArea{
+        display: flex;
+        position: absolute; bottom: 5px; left: 5px;
+    }
+    .textArea input{
+        line-height: 30px; width: 235px;
+        border-style: none;
+        border-bottom: 2px double #f59f1e;
+        background-color:rgb(228, 228, 228);
+    }
+    .textArea img{
+        width: 25px; height: 25px;
+    }
+/*----------------------CartFuntion-----------------------------*/
+.cartFunction{
+    background-color:rgb(231, 231, 231);
+    position: fixed; z-index: 10;
+    bottom: 0px; top: 0px; right: -350px;
+    height:100%; width: 350px;
+    transition: all 0.5s;
+}
+.cartTitle{
+    display: flex; color: #f59f1e;
+    justify-content: flex-start;
+    font-size: 30px; height: 100px;
+    background-color: rgb(41, 41, 41);
+    line-height: 100px;
+} 
+.back{
+    margin-left: 50px; margin-right: 80px;
+}
+.back:hover{
+    cursor: pointer; color: #fabb5d;
+}
+.cartList{
+    overflow-y: scroll; height: 670px;
+}
+.selectedItems{
+    display: flex; justify-content: space-around;
+    margin: 15px 20px; 
+}
+.selectedItems img{
+    width: 80px; height: 80px;
+} 
+.itemInfo{
+    margin: 0px 30px;
+    width: 200px;
+}
+.itemPrice{
+    margin: 5px 0px;
+}
+.itemNumCtrl{
+    border-radius: 20px;
+    width: 71px;
+}
+.quantity{
+    border: 2px solid #f59f1e;  
+    border-radius: 20px;
+    width: 65px; text-align: center;
+}
+.quantity:hover{
+    border: 2px solid #fabb5d; 
+}
+.quantity:focus{
+    outline-style: none;
+    font-size: 20px;
+    border: 3px solid #fabb5d; 
+}
+.deleteSign{
+    line-height: 80px;
+}
+.deleteSign:hover{
+    cursor: pointer;
+    color: #f59f1e;
+}
+.calculation{
+    position: fixed; bottom: 120px; 
+    border-top:  rgb(175, 175, 175) 1px solid;
+    height: 70px; width: 350px; padding-left: 30px;
+}
+.subTotal{
+    font-size: 25px; line-height: 35px;
+}
+.subPrice{
+    font-size: 20px; line-height: 35px;
+}
+.settle{
+    position: fixed; bottom: 0px; 
+    width: 350px ; height: 100px;
+    display: flex; justify-content: center;
+    align-items: center;
+    border-top: 0.5px solid rgb(175, 175, 175);
+    box-sizing: border-box;
+}
+.settleBtn{
+    background-color: #f59f1e;
+    width: 250px; height: 50px;
+    color: #FFFFFF; text-align: center;
+    line-height: 50px;
+}
+.settleBtn:hover{
+    background-color: #fabb5d;
+    cursor: pointer;
+}
+/*---------------------------------------------------------------*/
+.checkOutContainer{
+    display: flex; max-width: 900px;
+    margin-right: auto; margin-left: auto;
+    margin-top: 100px; 
+}
+.cartContainer{
+    width: 550px; margin-right: 50px;
+}
+.orderSummary{
+    width: 350px;
+}
+.cartCheckOut{
+    overflow-y:auto; height:auto;
+}
+.billDetail{
+    margin: 30px 0px ;
+}
+.shipping{
+    margin-top: 20px;
+}
+.textBold{
+    font-weight: 700;
+    font-size: 25px; margin-top: 10px;
+}
+.checkOutBtn{
+    display: flex; justify-content: center;
+}
+.checkOutBtn input{
+    margin-top: 50px; 
+    color: #FFFFFF; font-size: 22px;
+    width: 250px; line-height: 50px;
+    background-color:#f59f1e;  
+    transition: 0.5s all;    
+}
+.checkOutBtn input:hover{
+    background-color:#fabb5d;
+    cursor: pointer;      
+}
+
+/*-----------------------------Footer----------------------------*/
+.footer{
+    margin-left: auto; margin-right: auto;
+    width: 980px; height: 200px;
+    color: #FFFFFF; font-size: 15px;
+    background-color: rgb(41, 41, 41); 
+    margin-top: 180px;
+}
+.footer a{
+    color: cornsilk;
+}
+.info{
+    display: flex; margin-bottom: 20px;
+}
+.contactinfo{
+    margin-right: auto; 
+    padding-left: 50px; padding-top: 30px;
+}
+.contactinfo h3{
+    font-size: 25px; line-height: 50px;
+}
+.customerSer{
+    line-height: 20px;  
+    padding-top: 50px;  padding-right: 100px; 
+}
+.statement{
+    padding: 50px; padding-top: 50px;
+}
+.socialmedia{
+    padding-left: 45px;
+}
+.socialmedia a{
+    margin: 5px;
+}

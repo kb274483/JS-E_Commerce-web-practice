@@ -82,7 +82,15 @@ function definition(){
 
     let FAQopen = document.querySelector('.questionList');
     FAQopen.addEventListener('click',openFAQ);
+
+    let settleBtn= document.querySelector('.settleBtn');
+    settleBtn.addEventListener('click',toCheckOut);
+
 }
+
+function toCheckOut(){
+  window.location.href ="paymentPage.html";
+} 
 
 function openFAQ(e){
     if(e.target.nodeName === "UL" || e.target.nodeName === "P"){

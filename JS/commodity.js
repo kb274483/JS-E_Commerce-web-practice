@@ -71,6 +71,9 @@ function definition(){
     let openCart = document.querySelector('.openCart');
     openCart.addEventListener('click',viewCart);
     
+    let settleBtn= document.querySelector('.settleBtn');
+    settleBtn.addEventListener('click',toCheckOut);
+    
     let removeBtn = document.getElementsByClassName('deleteSign');
     for(let i=0 ; i<removeBtn.length ; i++){
       let button = removeBtn[i];
@@ -87,6 +90,9 @@ function definition(){
 
     let nextItem = document.querySelector(".nextItem");
     nextItem.addEventListener('click',nextItemNumber);
+}
+function toCheckOut(){
+  window.location.href ="paymentPage.html";
 }
 
 function nextItemNumber(){

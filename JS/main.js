@@ -67,6 +67,9 @@ function definition(){
     
     let openCart = document.querySelector('.openCart');
     openCart.addEventListener('click',viewCart);
+
+    let settleBtn= document.querySelector('.settleBtn');
+    settleBtn.addEventListener('click',toCheckOut);
     
     let removeBtn = document.getElementsByClassName('deleteSign');
     for(let i=0 ; i<removeBtn.length ; i++){
@@ -86,6 +89,9 @@ function definition(){
       //console.log(button);
       button.addEventListener('click',changePageToCommodity);
     }
+}
+function toCheckOut(){
+  window.location.href ="paymentPage.html";
 }
 
 function changePageToCommodity(e){

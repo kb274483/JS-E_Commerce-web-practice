@@ -91,6 +91,13 @@ function definition(){
       //console.log(button);
       button.addEventListener('click',changePageToCommodity);
     }
+
+    let settleBtn= document.querySelector('.settleBtn');
+    settleBtn.addEventListener('click',toCheckOut);
+}
+
+function toCheckOut(){
+  window.location.href ="paymentPage.html";
 }
 
 function changePageToCommodity(e){

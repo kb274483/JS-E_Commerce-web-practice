@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Page</title>
-    <link rel="stylesheet" href="CSS/FAQPage.css">
+    <title>PaymentPage</title>
+    <link rel="stylesheet" href="CSS/paymentPage.css">
     <link rel="shortcut icon" href="https://static.thenounproject.com/png/1292680-200.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
                 <p>A Picture Perfect Camera Store</p>
             </h1>
             <a href="loginPage.html" class="loginPage"><img src="CSS/pic/728843-200.png" alt="Loginico">Login</a>
-            <a href="#" class="openCart"><img src="CSS/pic/3749271-200.png" alt="Cartico">Cart</a>
+            <a href="#"><img src="https://image.flaticon.com/icons/png/128/2832/2832495.png" alt="Cartico">Cart</a>
         </div>
         <div class="menu">
             <ul>
@@ -69,6 +69,7 @@
         </div>
     </div>
 
+    <!--
     <div class="cartFunction">
         <div class="cartTitle">
             <div class="back">〉</div>
@@ -89,55 +90,31 @@
         </div>
 
     </div>
+    -->
 
-    <div class="FAQ">
-        <div class="FAQtitle">
-            <h3>FAQ <br>ANSWERS? WE'VE GOT THEM.</h3>
-            <p>Here are the questions we are most <br> frequently being asked.</p>
-            <h4>Still got questions?<a href="#"> Contact us></a></h4>
-        </div>
-        
-        <div class="questionAndAnswer">
-            <h3>Frequently asked questions</h3>
-            <ul class="questionList">
-                <li>How do I add a new question?
-                    <p class="answer">
-                        To add a new question go to app settings and press "Manage Questions" button.
-                    </p>
-                </li>
-                <hr>
-                <li>Can I insert pictures in my FAQ?
-                    <p class="answer">
-                        Yes! 
-                        To add a picture follow these simple steps:<br>
-                        Enter App Settings<br>
-                        Click the "Manage Questions" button<br>
-                        Click on the question you would like to attach a picture to<br>
-                        When editing your answer, click on the picture icon and then add an image from your library
-                    </p>
-                </li>
-                <hr>
-                <li>Can I insert a video in my FAQ?
-                    <p class="answer">
-                        Yes! Users can add video from YouTube or Vimeo with ease:<br>
-                        Enter App Settings<br>
-                        Click the "Manage Questions" button<br>
-                        Click on the question you would like to attach a video to<br>
-                        When editing your answer, click on the video icon and then paste the YouTube or Vimeo video URL<br>
-                        That's it! A thumbnail of your video will appear in answer text box
-                    </p>
-                </li>
-                <hr>
-                <li>How do I edit or remove the "FAQ title"?
-                    <p class="answer">
-                        The FAQ title can be adjusted in the settings tab of the App Settings. <br>
-                        You can also remove the title by unchecking its checkbox in the settings tab.
-                    </p>
-                </li>
-                <hr>
+    <div class="checkOutContainer">
+        <div class="cartContainer">
+            <h2>My Cart</h2>
+            <hr>
+            <ul class="cartCheckOut cartList">
             </ul>
+            <hr>
+        </div>
+        <div class="orderSummary">
+            <h2>Order Summary</h2>
+            <hr>
+            <div class="billDetail">
+                <div class="subTotal">SubTotal: <span class="subPrice"></span> </div>
+                <div class="shipping">Shipping : <strong class="textBold">Free</strong></div>
+            </div>
+            <hr>
+            <div ><strong class="textBold">Total :
+                <span class="summaryPrice"></span></strong>
+            </div>
+            <div class="checkOutBtn"><input type="button" value="CheckOut"></div>
         </div>
     </div>
+    
 
     
     <footer>
@@ -165,6 +142,6 @@
             </div>
         </div>
     </footer>
-    <script src="JS/FAQPage.js"></script>
+    <script src="JS/paymentPage.js"></script>
 </body>
 </html>

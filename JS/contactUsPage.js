@@ -85,14 +85,22 @@ function definition(){
       let button = inputBGColor[i];
       button.addEventListener('focus',changeBGColor);
       button.addEventListener('blur',revertBGColor);
-    } 
-
+    }
+    
+    let settleBtn= document.querySelector('.settleBtn');
+    settleBtn.addEventListener('click',toCheckOut);
+ 
     let inputText= document.querySelector(".inputText");
     inputText.addEventListener('focus',changeBGColor);
     inputText.addEventListener('blur',revertBGColor);
 
     let sendContact = document.querySelector('.sendContact');
     sendContact.addEventListener('click',sendContactData);
+}
+
+
+function toCheckOut(){
+  window.location.href ="paymentPage.html";
 }
 
 function sendContactData(){
